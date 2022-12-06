@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "Geogrotesque";
+    font-weight: 200;
+    src: url("https://db.onlinewebfonts.com/t/e93088eced057a6121875c00cfaa58f9.eot");
+    src: url("https://db.onlinewebfonts.com/t/e93088eced057a6121875c00cfaa58f9.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/e93088eced057a6121875c00cfaa58f9.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/e93088eced057a6121875c00cfaa58f9.woff") format("woff"), url("https://db.onlinewebfonts.com/t/e93088eced057a6121875c00cfaa58f9.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/e93088eced057a6121875c00cfaa58f9.svg#Geogrotesque") format("svg");
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+  }
+  @font-face {
+    font-family: "Geogrotesque";
+    font-weight: 300;
+    src: url("https://db.onlinewebfonts.com/t/0fb11be8781037453723dda767b71596.eot");
+    src: url("https://db.onlinewebfonts.com/t/0fb11be8781037453723dda767b71596.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/0fb11be8781037453723dda767b71596.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/0fb11be8781037453723dda767b71596.woff") format("woff"), url("https://db.onlinewebfonts.com/t/0fb11be8781037453723dda767b71596.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/0fb11be8781037453723dda767b71596.svg#Geogrotesque") format("svg");
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+  }
+  @font-face {
+    font-family: "Geogrotesque";
+    font-weight: 500;
+    src: url("https://db.onlinewebfonts.com/t/b18e9033532010bea11e37aa7543a869.eot");
+    src: url("https://db.onlinewebfonts.com/t/b18e9033532010bea11e37aa7543a869.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/b18e9033532010bea11e37aa7543a869.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/b18e9033532010bea11e37aa7543a869.woff") format("woff"), url("https://db.onlinewebfonts.com/t/b18e9033532010bea11e37aa7543a869.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/b18e9033532010bea11e37aa7543a869.svg#Geogrotesque") format("svg");
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+  }
+  @font-face {
+    font-family: "Geogrotesque";
+    font-weight: 600;
+    src: url("https://db.onlinewebfonts.com/t/fcc91ae87444e0558a00d6a43b6e4a22.eot");
+    src: url("https://db.onlinewebfonts.com/t/fcc91ae87444e0558a00d6a43b6e4a22.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/fcc91ae87444e0558a00d6a43b6e4a22.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/fcc91ae87444e0558a00d6a43b6e4a22.woff") format("woff"), url("https://db.onlinewebfonts.com/t/fcc91ae87444e0558a00d6a43b6e4a22.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/fcc91ae87444e0558a00d6a43b6e4a22.svg#Geogrotesque") format("svg");
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+  }
+  @font-face {
+    font-family: "Geogrotesque";
+    font-weight: 700;
+    src: url("https://db.onlinewebfonts.com/t/6966cc177fccc04acf8c9e8b04a81fe7.eot");
+    src: url("https://db.onlinewebfonts.com/t/6966cc177fccc04acf8c9e8b04a81fe7.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/6966cc177fccc04acf8c9e8b04a81fe7.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/6966cc177fccc04acf8c9e8b04a81fe7.woff") format("woff"), url("https://db.onlinewebfonts.com/t/6966cc177fccc04acf8c9e8b04a81fe7.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/6966cc177fccc04acf8c9e8b04a81fe7.svg#Geogrotesque") format("svg");
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
+  }
+  @font-face {
+    font-family: "YoonGothic";
+    font-weight: 300;
+    src: url("https://www.daelimmuseum.org//fonts/YoonGothic740.d6d34b3b.eot");
+    src: url("https://www.daelimmuseum.org//fonts/YoonGothic740.d6d34b3b.eot?#iefix") format("embedded-opentype"), 
+    url("https://www.daelimmuseum.org//fonts/YoonGothic740.bcb11bc3.woff2") format("woff2"), 
+    url("https://www.daelimmuseum.org//fonts/YoonGothic740.0c4e9522.woff") format("woff"), 
+    url("https://www.daelimmuseum.org//fonts/YoonGothic740.10e792c0.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "YoonGothic";
+    font-weight: 700;
+    src: url(data:application/vnd.ms-fontobject;base64,);
+    src: url(data:application/vnd.ms-fontobject;base64,?#iefix) format("embedded-opentype"), 
+    url("https://www.daelimmuseum.org//fonts/YoonGothic780.ff375648.woff2") format("woff2"), 
+    url("https://www.daelimmuseum.org//fonts/YoonGothic780.6697cca5.woff") format("woff"), 
+    url("https://www.daelimmuseum.org//fonts/YoonGothic780.f36cd811.ttf") format("truetype");
+  }
