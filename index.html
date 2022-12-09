@@ -313,5 +313,104 @@
     <button class="goto-top">
         <a href="#"><img src="./img/icon/goto-top.png" alt="맨 위로 이동"></a>
     </button>
+
+
+    <script>
+
+        let lastScrollY = 0;
+
+        addEventListener("scroll", e => {
+            const scrollY = window.scrollY;
+
+            // 이전의 스크롤 위치와 비교하기
+            let direction = scrollY > lastScrollY ? "Scroll Down" : "Scroll Up";
+            
+            // 현재의 스크롤 값을 저장
+            lastScrollY = scrollY;
+            let $headerEl = document.querySelector("body > header")
+            let $headerwebEl = document.querySelector(".header-web")
+            let $mainMenuEl = document.getElementsByClassName("main-menu");
+            let $aBackEl = document.querySelector("body > header > div > div > h1 > a");
+            let $searchEl = document.querySelector("body > header > div > div > div.side-icon > ul > li.search");
+            
+            // 스크롤 내릴때 그 시점
+            // 맨 상단에 위치할 경우
+            if(lastScrollY !== 0){
+                
+                // 모바일인 경우
+                if (isMobile) {
+
+                    // main-menu -> border css 제거 , header white
+                    $headerEl.style.background = "white"
+                    if(direction == "Scroll Up"){
+                        $headerwebEl.style.setProperty("margin-top","0px");
+                    } else {
+                        $headerwebEl.style.setProperty("margin-top","35px");
+                    }
+                    $mainMenuEl[0].style.setProperty('border','none');   
+
+                    $mainMenuEl[0].style.setProperty('position','-webkit-sticky');
+                    $mainMenuEl[0].style.setProperty('position','sticky');
+                    $mainMenuEl[0].style.setProperty('top','0');
+
+                    $aBackEl.style.setProperty("background","url(img/icon/logo-b.svg)center center no-repeat");
+                    $searchEl.style.setProperty("background","url(img/icon/all-menu.svg) center center no-repeat");
+
+                } else { // pc일 경우 
+                    
+                    // main-menu -> border css 제거 , header white
+                    $headerEl.style.background = "white"
+                    $mainMenuEl[0].style.setProperty('border','none');
+                    $mainMenuEl[0].style.setProperty('margin-top','-25px');
+                    $aBackEl.style.setProperty("background","url(img/icon/logo-b.svg)center center no-repeat");
+                    $searchEl.style.setProperty("background","url(img/icon/all-menu.svg) center center no-repeat");
+
+                }
+            } else if (lastScrollY === 0) { // 맨상단에 위치할 경우 
+                    $headerwebEl.style.setProperty("margin-top","0px");
+            } else {
+                // 맨 상단에 위치 하지 않을 경우
+                // main-menu -> border css 추가 , header에 background 제거
+
+                // 모바일인 경우
+                if (isMobile) {
+
+                    $headerEl.style.background = "";
+
+                    $aBackEl.style.setProperty("background","url(img/icon/logo.svg)center center no-repeat");
+                    $searchEl.style.setProperty("background","url(img/icon/search.svg) center center no-repeat");
+
+                } else { // pc일 경우 
+                    
+                    $headerEl.style.background = "";
+                    $mainMenuEl[0].style.setProperty('margin-top','30px');
+                    $mainMenuEl[0].style.setProperty('border','1px solid #ddd');
+                    $aBackEl.style.setProperty("background","url(img/icon/logo.svg)center center no-repeat");
+                    $searchEl.style.setProperty("background","url(img/icon/search.svg) center center no-repeat");
+                    
+
+                }
+
+            }
+        });
+
+        // 모바일 기기인지 체크 
+        function detectMobileDevice(agent) {
+        const mobileRegex = [
+            /Android/i,
+            /iPhone/i,
+            /iPad/i,
+            /iPod/i,
+            /BlackBerry/i,
+            /Windows Phone/i
+        ]
+
+        return mobileRegex.some(mobile => agent.match(mobile))
+        }
+        
+        // 모바일 여부 
+        const isMobile = detectMobileDevice(window.navigator.userAgent)
+
+    </script>
 </body>
 </html>

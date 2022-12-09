@@ -18,14 +18,17 @@ $tablet : 768px;
     div.main-menu{
         width: 100%; display: flex; 
         align-items: center; justify-content: space-between; 
-        border: 0px solid #ddd;
+        // border: 0px solid #ddd;
         height: 3.375rem;padding: 0px 1.8rem;
-        border-left: 0; border-right: 0;}
+        border-left: 0; border-right: 0;
+        position: fixed;
+        top: 0;
+    }
     /*메뉴 이벤트*/
     div.main-menu-sticky{ background:#fff; position:fixed; top:0; left:0 ;z-index: 10;}
 
     /*logo*/
-    div.main-menu h1 a{background: url(../img/icon/logo-b.svg)center center no-repeat;
+    div.main-menu h1 a{background: url(../img/icon/logo.svg)center center no-repeat;
                     width: 2.8125rem;
                     height: 2.8125rem;
                     font-size:0;
@@ -35,7 +38,7 @@ $tablet : 768px;
                 }
 
     /*logo 이벤트*/
-    div.main-menu-sticky h1.a{background: url(../img/icon/logo-b.svg)center center no-repeat;
+    div.main-menu-sticky h1.a{background: url(../img/icon/logo.svg)center center no-repeat;
     width: 2.8125rem; height: 2.8125rem; font-size:0; display: block;}
 
     /*menu*/
@@ -51,7 +54,7 @@ $tablet : 768px;
     /*검색 아이콘*/
     div.side-icon ul{margin: 0; padding: 0;
     display: flex; justify-content: center; align-items: center;}
-    div.side-icon ul > li.search{background: url(../img/icon/searchB.svg)center center no-repeat;display: inline-block;
+    div.side-icon ul > li.search{background: url(../img/icon/search.svg)center center no-repeat;display: inline-block;
                         vertical-align: middle;padding: 0 0.625rem;}
     div.side-icon ul > li.search a{
         width: 1.5625rem; height:1.5625rem; font-size: 0;
@@ -59,7 +62,7 @@ $tablet : 768px;
 
     /*검색 아이콘 이벤트*/
     div.side-icon > ul li.all-menu{
-        width: 1.5rem; height: 1rem; background: url(../img/icon/all-menu.svg);
+        width: 1.5rem; height: 1rem; background: url(../img/icon/iii.svg); background-repeat: no-repeat; background-size:contain;
     }
 
     /*main*/

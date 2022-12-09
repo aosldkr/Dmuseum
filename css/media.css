@@ -17,11 +17,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 0px solid #ddd;
     height: 3.375rem;
     padding: 0px 1.8rem;
     border-left: 0;
     border-right: 0;
+    position: fixed;
+    top: 0;
   }
   /*메뉴 이벤트*/
   div.main-menu-sticky {
@@ -33,7 +34,7 @@
   }
   /*logo*/
   div.main-menu h1 a {
-    background: url(../img/icon/logo-b.svg) center center no-repeat;
+    background: url(../img/icon/logo.svg) center center no-repeat;
     width: 2.8125rem;
     height: 2.8125rem;
     font-size: 0;
@@ -43,7 +44,7 @@
   }
   /*logo 이벤트*/
   div.main-menu-sticky h1.a {
-    background: url(../img/icon/logo-b.svg) center center no-repeat;
+    background: url(../img/icon/logo.svg) center center no-repeat;
     width: 2.8125rem;
     height: 2.8125rem;
     font-size: 0;
@@ -74,7 +75,7 @@
     align-items: center;
   }
   div.side-icon ul > li.search {
-    background: url(../img/icon/searchB.svg) center center no-repeat;
+    background: url(../img/icon/search.svg) center center no-repeat;
     display: inline-block;
     vertical-align: middle;
     padding: 0 0.625rem;
@@ -89,7 +90,9 @@
   div.side-icon > ul li.all-menu {
     width: 1.5rem;
     height: 1rem;
-    background: url(../img/icon/all-menu.svg);
+    background: url(../img/icon/iii.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   /*main*/
   div.main {
