@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@
     100;200;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <link rel="stylesheet" href="./css/comon.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -19,6 +20,51 @@
     <meta property="og:image" content="공유할배너이미지 주소">
     <meta property="og:description" content="사이트 소개 내용">
 </head>
+
+<style>
+
+
+    .mobile_all_menu {
+        width: 1.5rem;
+        height: 1rem;
+        background: url(img/icon/iii.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+            .wrap {
+                position: relative;
+                width: 1200px;
+                height: 500px;
+                background-color: white;
+                overflow: hidden;
+                margin: 0 auto;
+            }
+
+            .floating {
+                position: absolute;
+                border-radius: 50%;
+            }
+
+            .c1 {
+                top: 20%;
+                left: 10%;
+            }
+
+            .c2 {
+                top: 10%;
+                left: 40%;
+            }
+
+            .c3 {
+                bottom: 10%;
+                left: 70%;
+            }    
+
+
+</style>
+
 <body>
     <header>
         <div class="header-web">
@@ -56,8 +102,8 @@
                 <span>어째든, 사랑</span>
 
                 <div class="btn">
-                    <button class="btn1">자세히 보기</button>
-                    <button class="btn2">예매하기</button>
+                    <button style="cursor: pointer;"  class="btn1" onclick="window.open('https://daelimmuseum.org/exhibition/current')">자세히 보기</button>
+                    <button style="cursor: pointer;"  class="btn2" onclick="window.open('https://daelimmuseum.org/exhibition/current')">예매하기</button>
                 </div>
             </div> 
             
@@ -113,7 +159,7 @@
                     <p class="middle-text2">온라인 진로 특강</p>
                     <p class="middle-text3">2022.03 ~ 2022.11.27</p>
                     <p class="middle-text4">디뮤지엄</p>
-                    <a href="#"><span class="middle-text5">더보기</span></a>
+                    <a href="https://daelimmuseum.org/learn/education/snb/infant"><span class="middle-text5">더보기</span></a>
                 </div>
 
                 <div class="pone-img">
@@ -121,7 +167,7 @@
                 </div>
             </div>
         </div>
-        <div class="pone-img-text">
+        <!-- <div class="pone-img-text">
             <p><a href="#">
                 <img src="./img/icon/sp.svg" alt="" class="pont1">
             </a>
@@ -135,7 +181,7 @@
                 <img src="./img/icon/sp.svg" alt="" class="pont5">
             </a>
             </p>       
-        </div>
+        </div> -->
       
 
         <div class="middle-container2">
@@ -150,35 +196,36 @@
 
             <div class="middle3">
                 <ul class="middle-container3">
+                    <div class="wrap">
+                        <li class="middle-container3-img1 floating c1" >
+                            <a href="#">
+                                <img src="./img/under1.jpg" alt="이미지">
+                                <p>[어쨌든, 사랑] 필름 북마크 5종 (헨리,채
+                                    드,루카스,트리스탄,파올로)
+                                </p>
+                            </a>
+                        </li>
 
-                    <li class="middle-container3-img1">
-                        <a href="#">
-                            <img src="./img/under1.jpg" alt="이미지">
-                            <p>[어쨌든, 사랑] 필름 북마크 5종 (헨리,채
-                                드,루카스,트리스탄,파올로)
-                            </p>
-                        </a>
-                    </li>
+                        <li class="middle-container3-img2 floating c2">
+                            <a href="#">
+                                <img src="./img/under2.jpg" alt="이미지">
+                                <p>[어쨌든,사랑] 버블건</p>
+                            </a>
+                        </li>
 
-                    <li class="middle-container3-img2">
-                        <a href="#">
-                            <img src="./img/under2.jpg" alt="이미지">
-                            <p>[어쨌든,사랑] 버블건</p>
-                        </a>
-                    </li>
-
-                    <li class="middle-container3-img3">
-                        <a href="#">
-                            <img src="./img/under3.jpg" alt="이미지">
-                            <p>[어쨌든,사랑] 클립보드 5종 (이은혜,이미
-                                라,원수연,박은아,신일숙)
-                            </p>
-                        </a>
-                    </li>
+                        <li class="middle-container3-img3 floating c3">
+                            <a href="#">
+                                <img src="./img/under3.jpg" alt="이미지">
+                                <p>[어쨌든,사랑] 클립보드 5종 (이은혜,이미
+                                    라,원수연,박은아,신일숙)
+                                </p>
+                            </a>
+                        </li>
+                    </div>
                 </ul>
             
                 <button class="shopping-click">      
-                    <a href="#">쇼핑하기</a>
+                    <a href="https://daelimmuseum.org/shop/shopMain">쇼핑하기</a>
                     <img src="./img/icon/click.svg" alt="쇼핑하기 버튼">   
                 </button>
             </div>
@@ -331,8 +378,10 @@
             let $headerwebEl = document.querySelector(".header-web")
             let $mainMenuEl = document.getElementsByClassName("main-menu");
             let $aBackEl = document.querySelector("body > header > div > div > h1 > a");
+            let $allMenuEl = document.querySelector(".all-menu");
             let $searchEl = document.querySelector("body > header > div > div > div.side-icon > ul > li.search");
-            
+            let $allMenuParentEl = document.querySelector("body > header > div > div > div.side-icon > ul");
+
             // 스크롤 내릴때 그 시점
             // 맨 상단에 위치할 경우
             if(lastScrollY !== 0){
@@ -345,7 +394,7 @@
                     if(direction == "Scroll Up"){
                         $headerwebEl.style.setProperty("margin-top","0px");
                     } else {
-                        $headerwebEl.style.setProperty("margin-top","35px");
+                        $headerwebEl.style.setProperty("margin-top","0px");
                     }
                     $mainMenuEl[0].style.setProperty('border','none');   
 
@@ -354,6 +403,17 @@
                     $mainMenuEl[0].style.setProperty('top','0');
 
                     $aBackEl.style.setProperty("background","url(img/icon/logo-b.svg)center center no-repeat");
+                    $aBackEl.style.setProperty("width","2.8125rem");
+                    $aBackEl.style.setProperty("height","2.8125rem");
+                    $aBackEl.style.setProperty("font-size","0");
+                    $aBackEl.style.setProperty("display","block");
+                    $aBackEl.style.setProperty("margin-left","-28px");
+                    $aBackEl.style.setProperty("background-size","65%");
+                    
+                    if($allMenuEl != null) {
+                        $allMenuEl.remove();
+                    }
+
                     $searchEl.style.setProperty("background","url(img/icon/all-menu.svg) center center no-repeat");
 
                 } else { // pc일 경우 
@@ -367,7 +427,30 @@
 
                 }
             } else if (lastScrollY === 0) { // 맨상단에 위치할 경우 
+                
+                // 모바일일때 맨 상단에 위치할 경우  
+                if (isMobile){
+
                     $headerwebEl.style.setProperty("margin-top","0px");
+                    $headerEl.style.background = "";
+                    $aBackEl.style.setProperty("background","url(img/icon/logo.svg)center center no-repeat");
+                    $aBackEl.style.setProperty("background-size","65%");
+
+                    
+                    $searchEl.style.setProperty("background","url(img/icon/search.svg) center center no-repeat");
+                    
+                    let $allMenuHtml = "";
+                    $allMenuHtml += "<li class='all-menu'>";
+                    $allMenuHtml += "<a href='#'></a>";
+                    $allMenuHtml += "</li>";
+
+                    $allMenuParentEl.innerHTML += $allMenuHtml;
+
+                } else { // pc일 경우 
+                    $headerEl.style.background = "";
+                    $aBackEl.style.setProperty("background","url(img/icon/logo.svg)center center no-repeat");
+                    $searchEl.style.setProperty("background","url(img/icon/search.svg) center center no-repeat");
+                }
             } else {
                 // 맨 상단에 위치 하지 않을 경우
                 // main-menu -> border css 추가 , header에 background 제거
@@ -379,7 +462,9 @@
 
                     $aBackEl.style.setProperty("background","url(img/icon/logo.svg)center center no-repeat");
                     $searchEl.style.setProperty("background","url(img/icon/search.svg) center center no-repeat");
-
+                    if($allMenuEl != null) {
+                        $allMenuEl.remove();
+                    }
                 } else { // pc일 경우 
                     
                     $headerEl.style.background = "";
@@ -410,6 +495,78 @@
         
         // 모바일 여부 
         const isMobile = detectMobileDevice(window.navigator.userAgent)
+        
+        /*
+         * 이벤트 함수 시작 
+         */
+            
+        
+         //범위 랜덤 함수(소수점 2자리까지)
+        function random(min, max) { //min~max 범위
+            //toFixed()를 통해 반환된 문자 데이터를,
+            //parseFloat()을 통해 소수점을 가지는 숫자 데이터로 변환
+            return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+        }
+
+        function floatingCircle(item, delayAfter, size) {
+            gsap.to(
+                item, //선택자
+                random(1.5, 2.5), //1.5~2.5초 사이의 랜덤한 애니메이션 동작 시간
+                {
+                    delay: random(0, delayAfter), //몇초 뒤에 애니메이션을 실행, 지연 시간 설정
+                    y: size, //transform: translateY(수치)와 같음. 수직으로 움직이는 크기
+                    repeat: -1, //몇 번 반복하는지를 설정, -1은 무한 반복.
+                    yoyo: true, //한번 재생된 애니메이션을 다시 뒤로 재생-위아래 움직임
+                    ease: Power1.easeInOut //easing 함수 적용
+                }
+            );
+        }
+        
+        if (!isMobile) {
+            floatingCircle('.c1', .5, 25)
+            floatingCircle('.c2', 1, 20)
+            floatingCircle('.c3', 1.5, 10)
+        } else { // 모바일일 경우 
+            document.querySelector("body > main > div.middle-container2 > div.middle3 > ul > div").remove();
+            
+            let middleContainerEl = document.querySelector(".middle-container3");
+
+            let $middleContainer3Html = "";
+            $middleContainer3Html  += "<li class='middle-container3-img1' >"
+            $middleContainer3Html  +=      '<a href="#">'
+            $middleContainer3Html  +=      '<img src="./img/under1.jpg" alt="이미지">'
+            $middleContainer3Html  +=      '<p>[어쨌든, 사랑] 필름 북마크 5종 (헨리,채드,루카스,트리스탄,파올로)</p>'
+            $middleContainer3Html  +=      '</a>'
+            $middleContainer3Html  +=  "</li>"
+
+            $middleContainer3Html  +=  "<li class='middle-container3-img2'>"
+            $middleContainer3Html  +=      "<a href='#'>"
+            $middleContainer3Html  +=      '<img src="./img/under2.jpg" alt="이미지">'
+            $middleContainer3Html  +=      '<p>[어쨌든,사랑] 버블건</p>'
+            $middleContainer3Html  +=      '</a>'
+            $middleContainer3Html  +=      '</li>'
+
+            $middleContainer3Html  +=  "<li class='middle-container3-img3'>"
+            $middleContainer3Html  +=      '<a href="#">'
+            $middleContainer3Html  +=      '<img src="./img/under3.jpg" alt="이미지">'
+            $middleContainer3Html  +=      '<p>[어쨌든,사랑] 클립보드 5종 (이은혜,이미라,원수연,박은아,신일숙)'
+            $middleContainer3Html  +=      '</p>'
+            $middleContainer3Html  +=      '</a>'
+            $middleContainer3Html  +=  '</li>'
+
+            middleContainerEl.innerHTML = $middleContainer3Html
+        }     
+        let $shoppBtnEl = document.querySelector(".shopping-click");
+        let $shoppAel = $shoppBtnEl.querySelector("a");
+        let $shoppImgEl = $shoppBtnEl.querySelector("img");
+
+        $shoppBtnEl.addEventListener("mouseover", function (event) {
+        $shoppBtnEl.style.backgroundColor = "#D8D8D8";
+        }, false);
+
+        $shoppBtnEl.addEventListener("mouseout", function (event) {
+        $shoppBtnEl.style.backgroundColor = "white";
+        }, false);
 
     </script>
 </body>

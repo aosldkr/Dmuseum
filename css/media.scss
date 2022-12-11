@@ -18,7 +18,7 @@ $tablet : 768px;
     div.main-menu{
         width: 100%; display: flex; 
         align-items: center; justify-content: space-between; 
-        // border: 0px solid #ddd;
+        border: none;
         height: 3.375rem;padding: 0px 1.8rem;
         border-left: 0; border-right: 0;
         position: fixed;
