@@ -345,7 +345,7 @@ div.pone-img img {
 /*휴대폰 이미지 텍스트*/
 div.pone-img-text {
   position: absolute;
-  top: 1800px;
+  top: 1850px;
   right: 464px;
   display: flex;
 }
