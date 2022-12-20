@@ -11,7 +11,42 @@ $tablet : 768px;
 @include device($mobile,$tablet){
     //mobile
     /*header-web*/
-    header{position: fixed;left: 0;right: 0;top: 0;z-index: 35;}
+    header{position: fixed;left: 0;right: 0;top: 0;z-index: 35; height:54px;}
+
+    /*header-web 스크롤 이벤트*/
+    /*모바일*/
+    header.active{
+        background: white;
+        // height: 90px;
+    }
+    header.active .main-menu{
+        border: none;
+        margin-top: 0px;
+    }
+    header.active div.main-menu h1 a{
+        background: url(../img/icon/logo-b.svg)center center no-repeat;
+        width: 2.8rem; height: 3.3rem; 
+        font-size:0; display: block;
+        background-size: 65%;
+        margin-left: -15px;
+    }
+    header.active div.side-icon ul > li.all-menu{background: url(../img/icon/all-menu.svg)center center no-repeat; display: inline-block;
+        padding: 0 0.625rem; 
+        background-size: 52%; 
+    }
+    header.active div.side-icon ul > li.search{background: url(../img/icon/searchB.svg)center center no-repeat; display:none;
+        vertical-align: middle;padding: 0 0.625rem;
+
+    }
+
+    header div.side-icon ul > li.all-menu{background: url(../img/icon/all-menuw.svg)center center no-repeat; display: inline-block;
+        padding: 0 0.625rem; display: block;
+        background-size: 52%; 
+    }
+    
+
+    
+   
 
     div.header-web{width: 100%;margin-top: 0px;}
 
@@ -19,27 +54,21 @@ $tablet : 768px;
         width: 100%; display: flex; 
         align-items: center; justify-content: space-between; 
         border: none;
-        height: 3.375rem;padding: 0px 1.8rem;
-        border-left: 0; border-right: 0;
-        position: fixed;
+        height: 3.375rem;padding: 0px 1.2rem;
+        border-left: 0; border-right: 0;   
         top: 0;
     }
-    /*메뉴 이벤트*/
-    div.main-menu-sticky{ background:#fff; position:fixed; top:0; left:0 ;z-index: 10;}
 
     /*logo*/
     div.main-menu h1 a{background: url(../img/icon/logo.svg)center center no-repeat;
-                    width: 2.8125rem;
-                    height: 2.8125rem;
+                    width: 2.8rem;
+                    height: 3.3rem;
                     font-size:0;
                     display: block;
-                    margin-left: -28px;
+                    margin-left: -15px;
                     background-size: 65%;
                 }
 
-    /*logo 이벤트*/
-    div.main-menu-sticky h1.a{background: url(../img/icon/logo.svg)center center no-repeat;
-    width: 2.8125rem; height: 2.8125rem; font-size:0; display: block;}
 
     /*menu*/
     div.under-menu{display: inline-block; display: none;}
@@ -52,18 +81,23 @@ $tablet : 768px;
 
 
     /*검색 아이콘*/
-    div.side-icon ul{margin: 0; padding: 0;
-    display: flex; justify-content: center; align-items: center;}
-    div.side-icon ul > li.search{background: url(../img/icon/search.svg)center center no-repeat;display: inline-block;
-                        vertical-align: middle;padding: 0 0.625rem;}
-    div.side-icon ul > li.search a{
-        width: 1.5625rem; height:1.5625rem; font-size: 0;
-        display: inline-block;}
+div.side-icon ul{margin: 0; padding: 0; display: flex; flex-direction: row-reverse;}
 
-    /*검색 아이콘 이벤트*/
-    div.side-icon > ul li.all-menu{
-        width: 1.5rem; height: 1rem; background: url(../img/icon/iii.svg); background-repeat: no-repeat; background-size:contain;
-    }
+
+
+div.side-icon ul > li.search a{
+    width: 1.5625rem; height:1.5625rem; font-size: 0;
+    display: inline-block;}
+
+
+
+
+
+div.side-icon ul > li.all-menu a{
+    width: 1.5625rem; height:1.5625rem; font-size: 0;
+    display: inline-block;}
+
+
 
     /*main*/
     
@@ -544,13 +578,13 @@ $tablet : 768px;
 
 
     /*쇼핑하기 버튼*/
-    .shopping-click {
+    button.shopping-click {
         
         border: 1px solid #111;
         width: 10.875rem;
         height: 3.1rem;
         text-align: center;
-        margin-left: 30%;
+        margin-left: 28% ;
         background-color: #ffffff;
         letter-spacing: -0.04063rem;
         margin-top: 0%;

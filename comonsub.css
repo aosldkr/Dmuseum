@@ -9,7 +9,7 @@ ul,li{list-style-type: none; margin: 0px; padding: 0px;}
 
 img{vertical-align: middle;}
 
-a{color: #ffffff; text-decoration: none;}
+a{color: #000; text-decoration: none;}
 
 *{
     box-sizing: border-box;
@@ -21,20 +21,8 @@ a{color: #ffffff; text-decoration: none;}
 
 /*header-web*/
 header{position: fixed;left: 0;right: 0;top: 0;z-index: 35; background: transparent;}
-
-div.header-web{width: 100%;margin-top: 30px;}
-
-div.main-menu{width: 100%; display: flex; align-items: center; justify-content: space-between; border: 1px solid #ddd;
-              height: 4.375rem;padding: 0 3.75rem;
-              border-left: 0; border-right: 0;}
-
-
-/*header-web 스크롤 이벤트*/
-
-/*모바일*/
 header.active{
     background: white;
-    
 }
 header.active .main-menu{
     border: none;
@@ -48,35 +36,17 @@ header.active div.main-menu h1 a{
     
 }
 
-/*웹화면*/
-header.active div.side-icon ul > li.all-menu{background: url(../img/icon/searchB.svg)center center no-repeat; display: inline-block;
-    padding: 0 0.625rem; 
-    display: none;
-}
-header.active div.side-icon ul > li.search{background: url(../img/icon/all-menu.svg)center center no-repeat;display: inline-block;
-    vertical-align: middle;padding: 0 0.625rem;
-}
 
-header.active div.under-menu{display: none; margin-left: -90px;}
-/*메뉴버튼을 누를때*/
-header.menubtn div.side-icon ul > li.all-menu{background: url(../img/icon/searchB.svg)center center no-repeat;display: inline-block;
-    vertical-align: middle;padding: 0 0.625rem;
-}
+div.header-web{width: 100%;margin-top: 30px;}
 
-
-header.menubtn div.under-menu{display: inline-block; margin-left: -90px;}
-header.menubtn div.under-menu ul li > a{color: #000}
-
-
-
-
-
-
-
-
+div.main-menu{width: 100%; display: flex; align-items: center; justify-content: space-between; border: 1px solid #ddd;
+              height: 4.375rem;padding: 0 3.75rem;
+              border-left: 0; border-right: 0;}
+/*메뉴 이벤트*/
+div.main-menu-sticky{ background:#fff; position:fixed; top:0; left:0 ;z-index: 10;}
 
 /*logo*/
-div.main-menu h1 a{background: url(../img/icon/logo.svg)center center no-repeat;
+div.main-menu h1 a{background: url(../img/icon/logo-b.svg)center center no-repeat;
                    width: 2.8125rem; height: 2.8125rem; font-size:0; display: block;}
 
 /*menu*/
@@ -94,15 +64,15 @@ div.under-menu ul li > a.on{color: gold !important;}
 div.side-icon ul{margin: 0; padding: 0; display: flex;}
 
 div.side-icon ul > li.all-menu{background: url(../img/icon/searchB.svg)center center no-repeat; display: inline-block;
-    padding: 0 0.625rem; 
-    display: none;
+    padding: 0 0.625rem; display: none; 
 }
+
 
 div.side-icon ul > li.all-menu a{
     width: 1.5625rem; height:1.5625rem; font-size: 0;
     display: inline-block;}
 
-div.side-icon ul > li.search{background: url(../img/icon/SEARCH.svg)center center no-repeat;display: inline-block;
+div.side-icon ul > li.search{background: url(../img/icon/searchB.svg)center center no-repeat;display: inline-block;
                       vertical-align: middle;padding: 0 0.625rem;
 }
 
