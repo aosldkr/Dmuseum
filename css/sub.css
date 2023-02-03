@@ -2,23 +2,245 @@
 /*main*/
 main {
   width: 100%;
+  /*비디오*/
 }
 main .main-content2 {
   width: 100%;
-  padding: 5.625rem 0 6.25rem 0;
 }
 main .content2-text {
-  width: 80%;
+  width: 65%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 11rem 0 6.25rem 0;
 }
-main .content2-texth2 {
+main .content2-text h2 {
   position: relative;
-  font-weight: 300;
+  font-weight: 500;
   font-size: 4.5rem;
   color: #1d1d1d;
+  letter-spacing: -8px;
+}
+main .content2-text h2::before {
+  content: "";
+  display: block;
+  border-bottom: 1px solid #111;
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  width: 20.125rem;
+  height: 0.0625rem;
+}
+main .content2-text ul {
+  display: flex;
+}
+main .content2-text ul li {
+  padding: 0 1.25rem;
+  letter-spacing: -0.035em;
+}
+main .content2-text ul li::after {
+  content: "|";
+  font-size: 2px;
+  position: absolute;
+  top: 22.5%;
+  padding: 0 20px;
+  color: #ccc;
+}
+main .content2-text ul li:last-child::after {
+  content: "";
+}
+main .content2-text ul li.c1 a img {
+  transform: translateY(-2px);
+}
+main .content2-text ul li.c2 a {
+  font-weight: 300;
+  font-size: 0.875rem;
+  color: #999;
+}
+main .content2-text ul li.c3 a {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #111;
+}
+main div.vid {
+  height: 66.875rem;
+}
+main div.middle-content2 {
+  width: 80rem;
+  margin: 0 auto;
+  padding: 5.25rem 0 9.375rem 0;
+}
+main div.middle-content2-text {
+  padding-bottom: 0.625rem;
+}
+main div.middle-content2-text h3 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  line-height: 1.33;
+  letter-spacing: -0.125rem;
+}
+main div.middle-content2-text span {
+  display: block;
+  margin-top: 1.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  letter-spacing: -2px;
+  color: #666;
+  font-weight: 500;
+}
+main div.middle-content2-text span strong {
+  color: #111;
+  font-weight: 800;
+}
+main div.middle-content3 {
+  width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+main div.middle-content3 div.middle-content3-img img {
+  width: 654px;
+  height: 490px;
+}
+main div.middle-content3 div.middle-content3-text {
+  width: 100%;
+  margin-left: 8.5625rem;
+}
+main div.middle-content3 div.middle-content3-text h4 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.05625rem;
+}
+main div.middle-content3 div.middle-content3-text span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.04688rem;
+}
+main div.middle-content3 div.middle-content3-text P {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.074rem;
+}
+main div.middle-content3 div.middle-content3-text a {
+  display: flex;
+  align-items: center;
+  margin-top: 3.125rem;
+  width: 12.5rem;
+  padding: 1rem 2.5rem 0.9375rem 2.5rem;
+  border: 1px solid #111;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.025rem;
+  color: #111111;
+}
+main div.middle-content3 div.middle-content3-text a::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 0.625rem;
+  background: url(../img/icon/data.svg) center center no-repeat;
+}
+main div.middle-content4 {
+  width: 80rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+main div.middle-content4 div.middle-content4-text {
+  width: 70%;
+  margin-right: 20px;
+}
+main div.middle-content4 div.middle-content4-text h4 {
+  font-size: 36px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 1.75;
+  letter-spacing: -0.025rem;
+}
+main div.middle-content4 div.middle-content4-text span {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.04688rem;
+}
+main div.middle-content4 div.middle-content4-text P {
+  color: #666666;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 1.75;
+  letter-spacing: -0.074rem;
+}
+main div.middle-content4 div.middle-content4-text a {
+  display: flex;
+  align-items: center;
+  margin-top: 3.125rem;
+  width: 12.5rem;
+  padding: 1rem 2.5rem 0.9375rem 2.5rem;
+  border: 1px solid #111;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.025rem;
+  color: #111111;
+}
+main div.middle-content4 div.middle-content4-text a::before {
+  content: "";
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 0.625rem;
+  background: url(../img/icon/data.svg) center center no-repeat;
+}
+main div.middle-content4 div.middle-content4-img {
+  width: 696px;
+}
+main div.middle-content4 div.middle-content4-img img {
+  width: 126.5%;
+  height: 522px;
+  margin-right: -10.625rem;
+}
+main div.middle-content5 {
+  width: 80rem;
+  margin: 0 auto;
+  margin-top: 150px;
+  padding-bottom: 150px;
+}
+main div.middle-content5 div.middle-content5-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+main div.middle-content5 div.middle-content5-text .middle-content5-text1 h4 {
+  margin-top: 1.25rem;
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.05625rem;
+}
+main div.middle-content5 div.middle-content5-text .middle-content5-text1 p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.04688rem;
+}
+main div.middle-content5 div.middle-content5-text span {
+  width: 52.9375rem;
+  margin-top: 0rem;
+  font-size: 1rem;
+  line-height: 1.75;
+  letter-spacing: -0.025rem;
 }
 
 /*footer*/

@@ -12,7 +12,7 @@ function head(){
 
 
     $('header div.under-menu ul li').click(function(e){
-        e.preventDefault(); //웹페이지 이동 못하게 하는것
+        /*e.preventDefault();*/ //웹페이지 이동 못하게 하는것
         let idx = $(this).index();
         localStorage.idx = idx;
 
